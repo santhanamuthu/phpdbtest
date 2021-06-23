@@ -1,11 +1,9 @@
 <?php
-$dbhost = "172.30.78.113";
-$dbport = "3306");
-$dbuser = "muthu";
-$dbname = "Sprint2010";
-$dbpwd = "sampledb";;
- 
-
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbport = getenv("MYSQL_SERVICE_PORT");
+$dbuser = getenv("databaseuser");
+$dbpwd = getenv("databasepassword");
+$dbname = getenv("databasename");
 
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
