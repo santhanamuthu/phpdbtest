@@ -1,9 +1,9 @@
 <?php
-$dbhost = "172.30.96.122";
+$dbhost = "172.30.78.113";
 $dbport = "3306");
-$dbuser = getenv("DB_USER");
-$dbname = getenv("DB_NAME");
-$dbpwd = getenv("DB_PASSWORD");;
+$dbuser = "muthu";
+$dbname = "Sprint2010";
+$dbpwd = "sampledb";;
  
 
 
